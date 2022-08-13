@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+  <head>
+    <style>
+      input[type="submit"] {
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      a{
+        text-decoration: none;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .options{
+        position: relative;
+        left:35%;
+        width: 500px;
+      }
+
+      li{
+        padding-left: 50px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        background-color: #19388a;
+        border-radius: 2px;
+      }
+
+      a{
+        color: white;
+      }
+
+      li:hover{
+        background-color: #e0295d;
+      }
+
+      .title--decro{
+        color: #e0295d;
+        font-size: 50px;
+  background: #19388a;
+  text-align: center;  
+
+      }
+
+      .btn-disappear{
+          background-color: #19388a;
+          border: none;
+          display: none;
+      }
+
+      .adjust-to-fit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .text-box{
+        position: relative;
+        bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bag-image">
+      <img class="top--img" src="IPL Logo.jpg" />
+      <button class="back--btn">
+        <a href="user1st.html" style="color:white;">Back</a>
+      </button>
+     <h1 class="title--decro">Select what you want to know</h1>
+      <section class="options">
+        <ul type="none">  
+        <li><a href="rankOfPlayer.php">Player with Rank 1</a></li>
+        <li>
+          <a href="runHighest.php"> Batsman with highest score {Orange cap}</a
+          >
+        </li>
+        <li>
+          <a href="wicketHighest.php">
+            Bowler with highest wickets {Purple cap}</a
+          >
+          </li>        
+          
+     <li> 
+       <section class="adjust-to-fit">
+         <div>
+        <a>Average Run-Rate of : </a>
+      </div>
+      <div>
+        <form action="average.php" method="post"><table><tr align="center">
+                <input class="text-box" type="text" name="name" placeholder="CSK/MI/RCB/SRH" style="width: 150px;height: 20px">
+              </div>
+              </section>
+        <button class="btn-disappear" type="submit" style="float:center;" value="Submit">
+        </tr></table>
+      </li>
+        <li>
+          <a href="exists.php">Players in IPL with team-rating 7+</a
+          >
+        </li>
+      </ul>
+
+      </div></section>     
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+.bag-image {
+  background-image: url("sports_grass_field_04.jpg");
+  background-color: #cccccc;
+  height: 713px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top--img {
+  width: 1473px;
+  height: 110px;
+}
+
+.back--btn {
+  background-color: #19388a;
+  border: none;
+  color: white;
+  padding: 14px;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #111;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

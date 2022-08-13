@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .bag-image {
+        background-image: url("sports_grass_field_04.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 713px; /* You must set a specified height */
+        background-position: center; /* Center the image
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+      }
+      .top--img {
+        width: 1473px;
+        height: 110px;
+      }
+
+      .btn--back {
+        position: absolute;
+        right: 60px;
+        bottom: 60px;
+        background-color: #19388a;
+        border: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 2px;
+      }
+
+      .btn--back:hover {
+        background-color: #3b57a5;
+      }
+      .about--info {
+        width: 65%;
+        position: relative;
+        left: 100px;
+        top: -14px;
+        font-size: 18px;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      .to-divide-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+
+      .winner-pic {
+        width: 350px;
+        height: 352px;
+        position: relative;
+        right: 60px;
+        margin-right: 30px;
+      }
+      .trophy-pic {
+        width: 350px;
+        height: 352px;
+        position: relative;
+        right: 60px;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bag-image">
+      <img class="top--img" src="IPL Logo.jpg" />
+
+      <div class="header">
+        <h1 align="center">
+          <u><i>INDIAN PREMIER LEAGUE</i></u>
+        </h1>
+      </div>
+      <br />
+      <section class="to-divide-page">
+        <div class="about--info">
+          <p>
+            The <b>Indian Premier League (IPL),</b> officially Vivo Indian
+            Premier League for sponsorship reasons, is a professional Twenty20
+            cricket league in India contested during April and May of every year
+            by teams representing Indian cities. The league was founded by the
+            Board of Control for Cricket in India (BCCI) in 2007, and is
+            regarded as the brainchild of Lalit Modi, the founder and former
+            commissioner of the league. The current IPL title holders are the
+            Chennai Super Kings(CSK), who won the 2021 Indian Premier League.The
+            IPL is the most-attended cricket league in the world and ranks sixth
+            among all sports leagues. In 2010, the IPL became the first sporting
+            event in the world to be broadcast live on YouTube. The brand value
+            of IPL in 2017 was US$5.3 billion, according to Duff &
+            Phelps.According to BCCI, the 2015 IPL season contributed ₹11.5
+            billion (US$182 million) to the GDP of the Indian economy.
+          </p>
+        </div>
+        <div>
+          <img class="winner-pic" src="trophy.jpg" />
+        </div>
+        <div>
+          <img class="trophy-pic" src="winner.jpg" />
+        </div>
+      </section>
+      <button class="btn--back">
+        <a
+          href="index.html"
+          style="color: #fff; text-decoration: none; font-size: 20px"
+          >Back</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <style>
+      .requried {
+        color: red;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type="number"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type="date"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+        width: 1472px;
+        align-content: center;
+      }
+
+      .center-php {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: 300px;
+      }
+
+      .part-in-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="top--img" src="IPL Logo.jpg" />
+
+    <section class="part-in-two">
+      <div>
+        <button class="back--btn">
+          <a href="admin1st.html" style="color: white">Back</a>
+        </button>
+      </div>
+      <div class="center-php">Add Player</div>
+    </section>
+    <div class="container">
+      <form action="addplayer.php" method="post">
+        <label for="cap_no">Cap Number</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="cap_no"
+          placeholder="Player Cap Number.."
+          required
+        /><br />
+
+        <label for="playername">Player Name</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="text"
+          name="playername"
+          placeholder="Enter Player Name.."
+          required
+        /><br />
+
+        <label for="name">Team Name</label>
+        <label for="cap_no" class="requried">*</label><br />
+
+        <select id="text" name="name" placeholder="team name">
+          <option></option>
+          <option value="csk">csk</option>
+          <option value="mi">mi</option>
+          <option value="srh">srh</option>
+          <option value="rcb">rcb</option>
+        </select>
+        <br />
+
+        <label for="age">age</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="age"
+          placeholder="Player Age.."
+          max="50"
+          min="19"
+          required
+        /><br />
+        <label for="dob">DOB</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Player Date of Birth.."
+          required
+        /><br />
+        <br />
+        <label for="runs">Runs</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="runs"
+          placeholder="Player Runs.."
+          min="0"
+          required
+        />
+        <br />
+        <label for="wickets" class="required">Wickets</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="wickets"
+          placeholder="Player Wickets.."
+          min="0"
+          required
+        />
+        <br />
+        <label for="type">Type</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <select id="text" name="type" placeholder="player type">
+          <option value=""></option>
+          <option value="batsman">Batsman</option>
+          <option value="bowler">bowler</option>
+          <option value="allrounder">All-Rounder</option>
+        </select>
+        <br /><label for="no_of_matches">No of Matches</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="no_of_matches"
+          placeholder="Number of Matches Played.."
+          min="0"
+          required
+        />
+        <br />
+        <label for="rank">Rank</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="rank"
+          placeholder="Player rank .."
+          min="0"
+          required
+        />
+        <br />
+        <label for="batting_best">Batting Best</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="batting_best"
+          placeholder="Player's Batting Best.."
+          min="0"
+          required
+        /><br />
+        <br />
+        <label for="bowling_best">Bowling Best</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input
+          type="number"
+          name="bowling_best"
+          placeholder="Player's Bowling Best.."
+          required
+        /><br /><br />
+        <label for="image">Insert Player's Image here</label>
+        <label for="cap_no" class="requried">*</label><br />
+        <input type="file" id="myFile" name="filename" /><br />
+        <input type="submit" style="float: left" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

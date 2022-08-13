@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .required {
+        color: red;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="number"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="date"],
+      select,
+      textarea {
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .container {
+        border-radius: 5px;
+
+        padding: 20px;
+      }
+
+      .part-in-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .center-php {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="top--img" src="IPL Logo.jpg" />
+
+    <section class="part-in-two">
+      <div>
+        <button class="back--btn">
+          <a href="admin1st.html" style="color: white">Back</a>
+        </button>
+      </div>
+      <div class="center-php">Add Schedule</div>
+    </section>
+    <div class="container">
+      <form action="addschedule.php" method="post">
+        <label for="team1">Team1 Name</label>
+        <label class="required">*</label><br />
+        <select id="text" name="team1" placeholder="team name">
+          <option value="csk">csk</option>
+          <option value="mi">mi</option>
+          <option value="srh">srh</option>
+          <option value="rcb">rcb</option>
+        </select>
+
+        <br /><label for="team2">Team2 Name</label>
+        <label class="required">*</label><br />
+        <select id="text" name="team2" placeholder="team name">
+          <option value="csk">csk</option>
+          <option value="mi">mi</option>
+          <option value="srh">srh</option>
+          <option value="rcb">rcb</option>
+        </select>
+
+        <br /><label for="date">Date</label>
+        <label class="required">*</label>
+        <br /><input type="date" name="date" placeholder="Date.." required />
+
+        <br />
+        <label for="match_no">Match No</label>
+        <label class="required">*</label> <br /><input
+          type="number"
+          name="match_no"
+          placeholder="Match number.."
+          required
+        />
+        <br />
+        <label for="venue">Venue</label> <label class="required">*</label><br />
+        <input type="text" name="venue" placeholder="venue of match" required />
+
+        <br />
+        <br /><input type="submit" style="float: left" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

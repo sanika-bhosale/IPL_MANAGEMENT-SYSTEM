@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-repeat: no repeat;
+        background-size: 100%;
+      }
+      form {
+        border: 0px solid #f1f1f1;
+      }
+      h2 {
+        font-size: 50px;
+        text-align: center;
+      }
+      .name,
+      .pass {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+      }
+
+      button1 {
+        background-color: #ef9768;
+        color: white;
+        padding: 10px 14px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 20%;
+       
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      button1:hover {
+        opacity: 0.8;
+      }
+
+      .btn--back{
+        position: relative;
+        bottom: -100px;
+        right: -580px
+        
+      }
+
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      .FieldName {
+        margin-right: 20px;
+      }
+
+      .name {
+        position: relative;
+        right: 1px;
+      }
+
+      .title-login {
+        position: relative;
+        top: 23px;
+        left: 100x;
+        font-size: 40px;
+      
+      }
+
+      .to-box{
+        background-color: white;
+        position: relative;
+       width: 320px;
+       left: 570px;
+       top: 170px;
+       border-radius: 5px;
+      }
+
+      .btn--login{
+        width: 30%;
+       border-radius: 3px;
+      }
+
+      .pass{
+        position: relative;
+        right: -1px;
+      }
+      .btn--back:hover{
+          background-color: #f3b493;
+          transition: 0.5s;
+      }
+
+    </style>
+  </head>
+  <body background="LoginPageImage.png">
+    <div class="to-box">
+    <h2 class="title-login"><br />Admin Login</h2>
+    <form action="admin_login.php" method="post">
+      <div class="container" style="text-align: center">
+        <label class="FieldName" for="uname"><b>User Name :</b></label>
+        <input
+          class="name"
+          type="text"
+          placeholder="Enter Name"
+          name="uname"
+          required
+        />
+        <br /><br />
+        <label class="FieldName" for="psw"><b>Password :</b></label>
+        <input
+          class="pass"
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        /><br /><br />
+        <button class="btn--login" type="submit">Login</button><br />
+        <button1 class="btn--back" style="float: right" ><a class="back-link" href="index.html" style="color: black ;text-decoration: none;border-radius: 5px; font-size: 20px" > Back</a></button1>
+      </div>
+
+      </div>
+    </form>
+  </body>
+</html>
